@@ -43,6 +43,9 @@ class Vector2:
     def dot(self, other: Vector2) -> float:
         return self.__x * other.x + self.__y * other.y
 
+    def cross(self, other: Vector2) -> float:
+        return self.__x * other.y - self.__y * other.x
+
     def angle(self) -> float:
         """Angle of the vector in standard position."""
 
